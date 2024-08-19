@@ -1,0 +1,9 @@
+<!--Como eu estou iterando sobre a coleção categorias então cada item é individual e não a coleção inteira , ent para resolver eu ou uso o this ou crio um as -->
+{{#each categorias as |categoria|}}
+<a href="/categorias/{{slug}}">
+    <h1>{{categoria.nome}}</h1>
+</a>
+<small style="font-size: 1.5em;">{{categoria.slug}}</small>
+<h4>Data de criação: {{categoria.date}}</h4>
+<hr>
+{{/each}}

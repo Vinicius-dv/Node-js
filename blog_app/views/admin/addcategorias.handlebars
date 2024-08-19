@@ -1,0 +1,10 @@
+{{#each erros}}
+    <div class="error">{{texto}}</div>
+{{/each}}
+<form action="/admin/categorias/nova" method="post">
+    <label for="nome">Nome</label>
+    <input type="text" name="nome" id="nome" placeholder="Nome da categoria">
+    <label for="slug">Slug</label>
+    <input type="text" name="slug" id="slug" placeholder="Permitido apenas letras minúsculas" >
+    <button type="submit" class="btn btn-success">Criar categoria</button>
+</form>

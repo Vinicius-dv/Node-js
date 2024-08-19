@@ -1,0 +1,14 @@
+<h1>Editar Post</h1>
+<!-- Formulário para editar o post, envia dados para a rota /update/:id via POST -->
+<form action="/update/{{post.id}}" method="POST">
+    <!-- Campo para editar o título, com o valor atual do post preenchido -->
+    <label for="titulo">Título:</label>
+    <input type="text" id="titulo" name="titulo" value="{{post.titulo}}" required>
+    
+    <!-- Campo para editar o conteúdo, com o valor atual do post preenchido -->
+    <label for="conteudo">Conteúdo:</label>
+    <textarea id="conteudo" name="conteudo" required>{{post.conteudo}}</textarea>
+    
+    <!-- Botão para salvar as alterações -->
+    <button type="submit">Salvar Alterações</button>
+</form>

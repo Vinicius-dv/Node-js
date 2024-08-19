@@ -1,0 +1,172 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 14px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.error {
+    color: #d9534f; /* Cor vermelha para erros */
+    background-color: #f2dede; /* Fundo rosa claro */
+    border: 1px solid #d9534f; /* Borda vermelha */
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px; /* Espaço entre a mensagem de erro e o formulário */
+    width: 100%; /* Faz com que a mensagem ocupe toda a largura disponível */
+}
+
+.success{
+    color: #4CAF50; /* Cor do texto */
+    background-color: #C8E6C9; /* Cor de fundo */
+    border: 1px solid #388E3C; /* Cor da borda */
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    width: 100%; 
+}
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 10px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    width: 100%;
+    max-width: 500px; /* Ajuste conforme necessário */
+}
+
+.card-body{
+    padding: 10px;
+}
+
+/* Estilos para o botão de adicionar nova categoria */
+.btn-success {
+    background-color: #28a745;
+    color: white;
+    border: 1px solid #28a745;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn-danger {
+    background-color: red;
+    color: white;
+    border: 1px solid red;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+/* Adiciona um pouco de margem abaixo dos cards */
+.card {
+    margin-bottom: 15px;
+}
+.post{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+   
+}
+.registro{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+select{
+    width: 500px;
+}
+
+
+.jumbotron {
+    width: 900px;
+    background-color: #e9ecef;
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.jumbotron h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.jumbotron p {
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    color: #6c757d;
+}
+hr {
+    border: 1px solid #000; /* Borda preta */
+    width: 100%; /* Certifique-se de que o hr ocupe toda a largura disponível */
+  }

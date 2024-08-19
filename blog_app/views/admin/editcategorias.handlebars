@@ -1,0 +1,11 @@
+{{#each erros}}
+    <div class="error">{{texto}}</div>
+{{/each}}
+<form action="/admin/categorias/edit" method="post">
+    <input type="hidden" name="id" value="{{categoria._id}}">
+    <label for="nome">Nome</label>
+    <input type="text" name="nome" id="nome" placeholder="Nome da categoria" value="{{categoria.nome}}">
+    <label for="slug">Slug</label>
+    <input type="text" name="slug" id="slug" placeholder="Permitido apenas letras minúsculas" value="{{categoria.slug}}" >
+    <button type="submit" class="btn btn-success">Editar categoria </button>
+</form>

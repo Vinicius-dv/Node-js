@@ -5,7 +5,7 @@ const Sequelize = require('sequelize');
 // 2. Usuário do MySQL
 // 3. Senha do banco de dados
 // 4. Um objeto JSON com configurações adicionais
-const seque = new Sequelize('teste', 'root', 'laionel87@', {
+const seque = new Sequelize('teste', 'root', 'laionel', {
     host: 'localhost',
     dialect: 'mysql'
 });

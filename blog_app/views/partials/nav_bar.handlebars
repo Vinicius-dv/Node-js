@@ -1,0 +1,13 @@
+<nav>
+    <ul>
+        <li><a href="/">Blog do node</a></li>
+        <li><a href="/sobre">Home</a></li>
+        <li><a href="/categorias">Categorias</a></li>
+        {{#if user}}
+          <li><a href="/usuarios/logout">Sair</a></li>
+        {{else}}
+        <li><a href="/usuarios/login">Login</a></li>
+        <li><a href="/usuarios/registro">Registro</a></li>
+        {{/if}}
+    </ul>
+</nav>

@@ -1,0 +1,33 @@
+{{#each erros}}
+    <div class="error">{{texto}}</div>
+{{/each}}
+
+<div class="card">
+    <div class="container">
+        <form action="/admin/postagens/nova" method="post" class="post">
+            <label for="titulo">Titulo</label>
+            <input type="text" name="titulo" id="titulo">
+            <hr>
+            <label for="slug">Slug</label>
+            <input type="text" name="slug" id="slug">
+            <hr>
+            <label for="descrição">Descrição</label>
+            <input type="text" name="descrição" id="descrição">
+            <hr>
+            <label for="conteudo">Conteúdo</label>
+            <textarea name="conteudo" id="conteudo"></textarea>
+            <hr>
+            <label for="">Categoria</label>
+            <select name="categoria" id="categoria">
+                <!--Aqui estamos listando as categorias que estão vindo de postagens/add onde nessa rota eu estou renderizando esse formulario que esta passando as categorias-->
+                {{#each categorias}}
+                    <option value="{{_id}}">{{nome}}</option>
+                    {{else}} 
+                     <option value="0">Nenhuma categoria registrada</option>
+                {{/each}}
+                
+            </select>
+            <button type="submit">Criar postagem</button>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,31 @@
+<h2>Lista de categorias:</h2>
+<hr>
+<a href="/admin/categorias/add">
+    <button class="btn btn-sucess">Nova categoria</button>
+</a>
+
+<!--Ou seja para cada categoria ela vai ser exibida em um card ent como eu estou passando o 
+parametro que eu defini na rota categoria que é as minhas categorias do banco de dados do mongoose 
+como eu quero listar cada uma em um card eu abro um each que ele vai me exibir uma por uma e com isso eu 
+chamo minhas 'colunas' exemplo eu tenho o nome no meu modelo categorias quando eu chamar {{nome}} vai me exibir 
+o nome que eu botei em cada categoria , por isso a importancia do each , ele lista 1 por uma.-->
+{{#each categorias}}
+    <div class="card">
+        <div class="card-body">
+            <h4>Nome:{{nome}}</h4>
+            <small>Slug:{{slug}}</small>
+            <hr>
+            <small>Data:{{date}}</small>
+            <!--Esse _id esta pegando o id de cada post -->
+            <a href="/admin/categorias/edit/{{_id}}">
+                 <button class="btn btn-sucess">Editar</button>
+            </a>
+
+            <form action="/admin/categorias/deletar" method="post">
+                <input type="hidden" name="id" value="{{_id}}">
+                <button class="btn btn-danger" type="submit">Deletar</button>
+            </form>
+        </div>
+    </div>
+    {{else}}
+{{/each}}
