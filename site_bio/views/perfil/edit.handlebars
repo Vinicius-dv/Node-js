@@ -1,0 +1,10 @@
+<form action="/perfil/edit" method="post">
+    <input type="hidden" name="id" value="{{perfil._id}}">
+    <label for="nome">Editar nome:</label>
+    <input type="text" name="nome" id="nome" value="{{perfil.nome}}">
+
+    <label for="bio">Editar bio</label>
+    <input type="text" name="bio" id="bio" value="{{perfil.bio}}">
+
+    <button type="submit">Salvar perfil</button>
+</form>

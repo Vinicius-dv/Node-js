@@ -1,0 +1,11 @@
+<h1>Seja bem vindo ao seu perfil aqui você vai poder ver suas biografias </h1>
+<hr>
+<h2>Biografias recentes:</h2>
+
+{{#each perfil}}
+    <h1>Nome:{{nome}}</h1>
+    <p>bio:{{bio}}</p>
+   <a href="/perfil/edit/{{_id}}">
+    <button class="btn-edit">Editar Perfil</button>
+   </a>
+{{/each}}
